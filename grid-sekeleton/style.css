@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template: 2fr 1fr 30fr 1fr / 1fr 4fr;
+  gap: 4px;
+  height: 100vh;
+}
+
+.container div {
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  padding: 15px;
+  background-color: #393f4d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 1 / 1 / 2 / 4;
+  justify-items: start;
+  align-items: center;
+}
+
+.logo {
+}
+
+.menu {
+  display: grid;
+  align-items: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  list-style: none;
+  gap: 0 5em;
+
+}
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+}
+
+.sidebar {
+  background-color: #FF7755;
+  display: grid;
+  grid-area: 2 /1 / 4 / 2;
+  gap: 50px;
+  padding: 20px;
+}
+
+.sidebar .photo {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 10px;
+}
+
+.photo  {
+}
+
+.sidebar .side-content {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav {
+  background-color: #FF7755;
+  grid-area: 2 / 2/ 3 / 3;
+  display: grid;
+  align-items: center;
+
+}
+
+.nav ul {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article {
+  grid-area: 3 /2 / 4 / 2;
+  background-color: #bccbde;
+  display: grid;
+  gap: 15px;
+  grid-template: repeat(3, 1fr) / repeat(3, minmax(250px, 1fr));
+
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+
+  display: grid;
+  height: 200px;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #393f4d;
+  grid-area: 4 /1 / 5 / 4;
+
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;  
+}
